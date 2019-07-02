@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  godesafio-s3wf:
+    image: nginx:1.17.0-alpine
+    ports:
+      - '8089:80'
+    volumes:
+      - './spa:/usr/share/nginx/html'
+
